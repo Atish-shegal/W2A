@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <test name="Test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
     <classes>
       <class name="com.w2a.architectbatch1.testCases.TestCase1">
         <methods>
@@ -9,6 +9,7 @@
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="tc_01"/>
           <include name="beforeTest"/>
           <include name="tc_02"/>
           <include name="tearDown"/>
@@ -16,6 +17,19 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.w2a.architectbatch1.testCases.TestCase1 -->
+      <class name="com.w2a.architectbatch1.testCases.TestCase2">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tc_03"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.w2a.architectbatch1.testCases.TestCase2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
