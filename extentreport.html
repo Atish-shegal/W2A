@@ -31,8 +31,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -46,7 +45,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 29, 2017 01:15:45 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 4, 2017 01:34:54 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +71,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -79,16 +79,6 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
-			<div class='chip transparent'>
-				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-					<i class='material-icons'>local_offer</i> Category
-				</a>
-				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>Sanity</a></li>
-					<li class='divider'></li>
-					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
-				</ul>
-			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -132,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> class(es) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> class(es) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> class(es) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> class(es) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -147,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -162,10 +152,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='37.5%'><span class='strong'>3</span> log(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> log(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> log(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='62.5%'>5</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> log(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -179,127 +169,26 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
-					<div class='test-heading'>
-						<span class='test-name'>TestCase2</span>
-						<span class='test-time'>Oct 29, 2017 01:15:45 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 29, 2017 01:15:45 PM</span>
-	<span class='label end-time'>Oct 29, 2017 01:16:18 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+231ms</span>
-</div>
-	<ul class='collapsible node-list' data-collapsible='accordion'>
-		
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
-					<div class='collapsible-header'>
-						<div class='node-name'>tc_03</div>						
-						<span class='node-time'>Oct 29, 2017 01:16:04 PM</span>
-						<span class='node-duration'>0h 0m 14s+915ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>1:16:04 PM</td>
-													<td class='step-details'>Execution of Test Case- tc_03 started</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>1:16:18 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-	</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>TestCase1</span>
-						<span class='test-time'>Oct 29, 2017 01:15:45 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Nov 4, 2017 01:34:55 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 29, 2017 01:15:45 PM</span>
-	<span class='label end-time'>Oct 29, 2017 01:16:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 43s+362ms</span>
+	<span class='label start-time'>Nov 4, 2017 01:34:55 PM</span>
+	<span class='label end-time'>Nov 4, 2017 01:35:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+255ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
-					<div class='collapsible-header'>
-						<div class='node-name'>tc_01</div>						
-						<span class='node-time'>Oct 29, 2017 01:15:54 PM</span>
-						<span class='node-duration'>0h 0m 10s+21ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>Sanity</span>
-									</div>
-									<div class='author-list right'>
-											<span class='author label white-text'>Rahul</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>1:15:54 PM</td>
-													<td class='step-details'>Execution of Test Case- tc_01 started</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>1:15:59 PM</td>
-													<td class='step-details'>navigated to LoginPage</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>1:15:59 PM</td>
-													<td class='step-details'>clicked on to Member login</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>1:16:04 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>tc_02</div>						
-						<span class='node-time'>Oct 29, 2017 01:16:17 PM</span>
-						<span class='node-duration'>0h 0m 11s+821ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Nov 4, 2017 01:35:06 PM</span>
+						<span class='node-duration'>0h 0m 3s+461ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -314,13 +203,33 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>1:16:17 PM</td>
+													<td class='timestamp'>1:35:06 PM</td>
 													<td class='step-details'>Execution of Test Case- tc_02 started</td>
 												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>1:16:29 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:35:10 PM</td>
+													<td class='step-details'><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.w2a.architectbatch1.Pages.BasePage.waitForPageToLoad(BasePage.java:50)
+	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:39)
+	at com.w2a.architectbatch1.Pages.FacebookHomePage.open(FacebookHomePage.java:10)
+	at com.w2a.architectbatch1.Pages.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:36)
+	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
@@ -355,88 +264,19 @@
 
 </div>
 <!-- test view -->
-<div id='category-view' class='view hide'>
-
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Categories</h3>
-			<ul id='category-collection' class='category-collection'>
-				
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>Sanity</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 29, 2017 01:15:54 PM</td>
-										<td class='linked' test-id='3'>TestCase1.tc_01</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='category-name'></h5>
-		</div>
-	</div>
-</div>
 <!-- category view -->
-<div id='author-view' class='view hide'>
+<div id='exception-view' class='view hide'>
+
     <section id='controls'>
         <div class='controls grey lighten-4'>
             <!-- search -->
-            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
                 <a href="#" class='search-div'>
                     <i class='material-icons'>search</i> Search
                 </a>
 
                 <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
                 </div>
 
             </div>
@@ -447,24 +287,16 @@
     <div class='subview-left left'>
 
         <div class='view-summary'>
-            <h5>Authors</h5>
-                <ul id='author-collection' class='author-collection'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
 
-                        <li class='author displayed active'>
-                            <div class='author-heading'>
-                                <span class='author-name'>Rahul</span>
-                                <span class='author-status right'>
-                                        <span class='label pass'>1</span>
-						        </span>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
-                            <div class='author-content hide'>
-                                <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
-                                    
-                                    
-                                </div>
-
-                                <div class='author-tests'>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
                                     <table class='bordered table-results'>
                                         <thead>
                                         <tr>
@@ -474,24 +306,43 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Oct 29, 2017 01:15:54 PM</td>
-                                                <td class='linked' test-id='3'>TestCase1.tc_01</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Nov 4, 2017 01:35:06 PM</td>
+                                                        <td class='linked' test-id='2'>TestCase1.tc_02</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.w2a.architectbatch1.Pages.BasePage.waitForPageToLoad(BasePage.java:50)
+	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:39)
+	at com.w2a.architectbatch1.Pages.FacebookHomePage.open(FacebookHomePage.java:10)
+	at com.w2a.architectbatch1.Pages.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:36)
+	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></pre></td>
+                                                    </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </li>
-
                 </ul>
         </div>
     </div>
 
     <div class='subview-right left'>
         <div class='view-summary'>
-            <h5 class='author-name'></h5>
+            <h5 class='exception-name'></h5>
         </div>
     </div>
 </div>
@@ -504,37 +355,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Classes
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 29, 2017 01:15:45 PM</div>
+					<div class='panel-lead'>Nov 4, 2017 01:34:54 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 29, 2017 01:16:29 PM</div>
+			 		<div class='panel-lead'>Nov 4, 2017 01:35:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>43,771ms</div>
+					<div class='panel-lead'>15,654ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -553,26 +404,6 @@
 					</table>
 				</div>
 			</div>
-			<div class='col s4'>
-				<div class='card-panel'>
-					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
-					
-					<table>
-						<tr>
-							<th>Name</th>
-							<th>Passed</th>
-							<th>Failed</th>
-							<th>Others</th>
-						</tr>
-						<tr>
-							<td>Sanity</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-					</table>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -583,31 +414,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 3,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 3,
-				failGrandChild: 0,
+				passGrandChild: 0,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
-				infoGrandChild: 5,
-				exceptionsGrandChild: 0,
+				infoGrandChild: 1,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

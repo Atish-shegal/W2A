@@ -67,6 +67,7 @@ public class TestSetUp {
 		if (driver == null) {
 			configProperty = PropertyFileManager.createConfigFileProperty();
 			driver = DriverFactory.createDriverInstance(configProperty.getProperty("browser"));
+			DriverManager.getDriver().navigate().to(configProperty.getProperty("application.url.fb"));
 
 		}
 

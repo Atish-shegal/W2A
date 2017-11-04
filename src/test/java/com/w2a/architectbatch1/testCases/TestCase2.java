@@ -8,7 +8,7 @@ import com.w2a.architectbatch1.TestUtils.DriverManager;
 import com.w2a.architectbatch1.baseSetup.TestSetUp;
 
 public class TestCase2 extends TestSetUp{
-	@Test
+	/*@Test
 	public void tc_03() {
 		
 		DriverManager.getDriver().get("https://www.facebook.com");
@@ -29,5 +29,5 @@ public class TestCase2 extends TestSetUp{
 		
 		Assert.fail();
 	}
-
+*/
 }

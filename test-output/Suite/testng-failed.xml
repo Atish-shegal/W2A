@@ -9,7 +9,6 @@
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="tc_01"/>
           <include name="beforeTest"/>
           <include name="tc_02"/>
           <include name="tearDown"/>
@@ -17,19 +16,6 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.w2a.architectbatch1.testCases.TestCase1 -->
-      <class name="com.w2a.architectbatch1.testCases.TestCase2">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="tc_03"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeTest"/>
-          <include name="tearDown"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.w2a.architectbatch1.testCases.TestCase2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
