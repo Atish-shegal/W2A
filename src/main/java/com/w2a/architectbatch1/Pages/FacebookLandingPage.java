@@ -13,7 +13,7 @@ public class FacebookLandingPage extends BasePage{
 	@FindBy(id="pass")
 	private WebElement password;
 	
-	@FindBy(linkText="Log In")
+	@FindBy(xpath="//input[@value='Log In']")
 	private WebElement loginButton;
 
 	@Override
@@ -30,10 +30,20 @@ public class FacebookLandingPage extends BasePage{
 	public FacebookHomePage doLoginWithValidCredentials(String userName,String pass)
 	{
 	
+		type("username",userName,email);
+		//email.sendKeys(userName);
+		password.sendKeys(pass);
+		loginButton.click();
+		return (FacebookHomePage)openPage(FacebookHomePage.class);
+	}
+	
+	public FacebookLandingPage doLoginWithInValidCredentials(String userName,String pass)
+	{
+	
 		email.sendKeys(userName);
 		password.sendKeys(pass);
 		loginButton.click();
-		return new FacebookHomePage().open();
+		return this;
 	}
 	
 

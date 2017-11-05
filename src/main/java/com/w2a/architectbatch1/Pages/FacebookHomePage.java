@@ -5,10 +5,10 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 public class FacebookHomePage extends BasePage{
 	
 	
-	public FacebookHomePage open()
+	/*public FacebookHomePage open()
 	{
 		return (FacebookHomePage)openPage(FacebookHomePage.class);
-	}
+	}*/
 
 	@Override
 	public ExpectedCondition getPageLoadCondition() {

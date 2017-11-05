@@ -71,20 +71,20 @@ public class TestSetUp {
 
 		}
 
-		ExtentTest child = classLevelReport.get().createNode(method.getName());
+		/*ExtentTest child = classLevelReport.get().createNode(method.getName());
 		testLevelReport.set(child);
 		testLevelReport.get().log(Status.INFO, "Execution of Test Case-"+" "+method.getName()+" started");
-
+*/
 	}
 
 	@AfterMethod
 	public synchronized void afterMethod(ITestResult result) {
-		 if (result.getStatus() == ITestResult.FAILURE)
+	/*	 if (result.getStatus() == ITestResult.FAILURE)
 			 testLevelReport.get().fail(result.getThrowable());
 	        else if (result.getStatus() == ITestResult.SKIP)
 	        	testLevelReport.get().skip(result.getThrowable());
 	        else
-	        	testLevelReport.get().pass("Test passed");
+	        	testLevelReport.get().pass("Test passed");*/
 
 	        extent.flush();
 		

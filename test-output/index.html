@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.architectbatch1.testCases.TestCase1" hash-for-method="tc_02">tc_02</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.architectbatch1.testCases.TestCase1" hash-for-method="tc_02({password=12345.0, username=Rahul})">tc_02({password=12345.0, username=Rahul})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -125,16 +125,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_02">
-                  </a> <!-- tc_02 -->
+                  <a name="tc_02({password=12345.0, username=Rahul})">
+                  </a> <!-- tc_02({password=12345.0, username=Rahul}) -->
                   <span class="method-name">tc_02</span>
+                  <span class="parameters">({password=12345.0, username=Rahul})</span>
                   <div class="stack-trace">java.lang.NullPointerException
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
 	at com.w2a.architectbatch1.Pages.BasePage.waitForPageToLoad(BasePage.java:50)
 	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:39)
-	at com.w2a.architectbatch1.Pages.FacebookHomePage.open(FacebookHomePage.java:10)
 	at com.w2a.architectbatch1.Pages.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:36)
-	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:32)
+	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:38)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
@@ -154,6 +154,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.w2a.architectbatch1.CustomListeners.CustomListeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.w2a.architectbatch1.testCases.TestCase1&quot;/&gt;
@@ -201,7 +204,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_02')
 data.setCell(0, 2, 'com.w2a.architectbatch1.testCases.TestCase1')
-data.setCell(0, 3, 3425);
+data.setCell(0, 3, 3463);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -252,37 +255,37 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">399 ms</span>
+                <span class="method-start">496 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">411 ms</span>
+                <span class="method-start">510 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.w2a.architectbatch1.testCases.TestCase1.tc_02())</span>
-                <span class="method-start">428 ms</span>
+                <span class="method-name">beforeMethod(public void com.w2a.architectbatch1.testCases.TestCase1.tc_02(java.util.Hashtable))</span>
+                <span class="method-start">685 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">tc_02</span>
-                <span class="method-start">12231 ms</span>
+                <span class="method-name">tc_02({password=12345.0, username=Rahul})</span>
+                <span class="method-start">14215 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=tc_02 status=FAILURE method=TestCase1.tc_02()[pri:0, instance:com.w2a.architectbatc...)</span>
-                <span class="method-start">15668 ms</span>
+                <span class="method-name">afterMethod([TestResult name=tc_02 status=FAILURE method=TestCase1.tc_02(java.util.Hashtable)[pri:0, instance:co...)</span>
+                <span class="method-start">18908 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">17320 ms</span>
+                <span class="method-start">20416 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">17321 ms</span>
+                <span class="method-start">20418 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17377 ms</span>
+                <span class="method-start">20446 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

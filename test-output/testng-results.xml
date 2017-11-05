@@ -2,44 +2,50 @@
 <testng-results skipped="0" failed="1" ignored="4" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16926" started-at="2017-11-04T08:04:54Z" finished-at="2017-11-04T08:05:11Z">
+  <suite name="Suite" duration-ms="19925" started-at="2017-11-05T09:48:51Z" finished-at="2017-11-05T09:49:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16926" started-at="2017-11-04T08:04:54Z" finished-at="2017-11-04T08:05:11Z">
+    <test name="Test" duration-ms="19925" started-at="2017-11-05T09:48:51Z" finished-at="2017-11-05T09:49:11Z">
       <class name="com.w2a.architectbatch1.testCases.TestCase1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="setUp" is-config="true" duration-ms="395" started-at="2017-11-04T13:34:54Z" finished-at="2017-11-04T13:34:54Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="setUp" is-config="true" duration-ms="493" started-at="2017-11-05T15:18:50Z" finished-at="2017-11-05T15:18:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-11-04T13:34:55Z" finished-at="2017-11-04T13:34:55Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="beforeTest" is-config="true" duration-ms="1" started-at="2017-11-05T15:18:51Z" finished-at="2017-11-05T15:18:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="beforeClass" is-config="true" duration-ms="6" started-at="2017-11-04T13:34:55Z" finished-at="2017-11-04T13:34:55Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="beforeClass" is-config="true" duration-ms="8" started-at="2017-11-05T15:18:51Z" finished-at="2017-11-05T15:18:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="beforeMethod" is-config="true" duration-ms="11803" started-at="2017-11-04T13:34:55Z" finished-at="2017-11-04T13:35:06Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="beforeMethod" is-config="true" duration-ms="13530" started-at="2017-11-05T15:18:51Z" finished-at="2017-11-05T15:19:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.w2a.architectbatch1.testCases.TestCase1.tc_02()]]>
+                <![CDATA[public void com.w2a.architectbatch1.testCases.TestCase1.tc_02(java.util.Hashtable)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="tc_02()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="tc_02" duration-ms="3425" started-at="2017-11-04T13:35:06Z" finished-at="2017-11-04T13:35:10Z">
+        <test-method status="FAIL" signature="tc_02(java.util.Hashtable)[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="tc_02" duration-ms="3463" started-at="2017-11-05T15:19:05Z" data-provider="dp" finished-at="2017-11-05T15:19:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=12345.0, username=Rahul}]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
 	at com.w2a.architectbatch1.Pages.BasePage.waitForPageToLoad(BasePage.java:50)
 	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:39)
-	at com.w2a.architectbatch1.Pages.FacebookHomePage.open(FacebookHomePage.java:10)
 	at com.w2a.architectbatch1.Pages.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:36)
-	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:32)
+	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -59,26 +65,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_02 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="afterMethod" is-config="true" duration-ms="1651" started-at="2017-11-04T13:35:10Z" finished-at="2017-11-04T13:35:11Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="afterMethod" is-config="true" duration-ms="1507" started-at="2017-11-05T15:19:09Z" finished-at="2017-11-05T15:19:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc_02 status=FAILURE method=TestCase1.tc_02()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=tc_02 status=FAILURE method=TestCase1.tc_02(java.util.Hashtable)[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-11-04T13:35:11Z" finished-at="2017-11-04T13:35:11Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-11-05T15:19:11Z" finished-at="2017-11-05T15:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-11-04T13:35:11Z" finished-at="2017-11-04T13:35:11Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-11-05T15:19:11Z" finished-at="2017-11-05T15:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@2362f559]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-04T13:35:11Z" finished-at="2017-11-04T13:35:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.architectbatch1.testCases.TestCase1@8c3b9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-11-05T15:19:11Z" finished-at="2017-11-05T15:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
