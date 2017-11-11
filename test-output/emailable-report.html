@@ -9,15 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,925</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,426</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.w2a.architectbatch1.testCases.TestCase1</td><td><a href="#m0">tc_02</a></td><td rowspan="1">1509875345139</td><td rowspan="1">3463</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.w2a.architectbatch1.testCases.TestCase1</td><td><a href="#m0">tc_02</a></td><td rowspan="1">1510384052070</td><td rowspan="1">4121</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.w2a.architectbatch1.testCases.TestCase1#tc_02</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=12345.0, username=Rahul}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+<h2>Test</h2><h3 id="m0">com.w2a.architectbatch1.testCases.TestCase1#tc_02</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=12123.0, username=8.744954505E9}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.w2a.architectbatch1.Pages.BasePage.waitForPageToLoad(BasePage.java:50)
-	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:39)
-	at com.w2a.architectbatch1.Pages.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:36)
+	at com.w2a.architectbatch1.Pages.BasePage.waitForPageLoad(BasePage.java:39)
+	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:27)
+	at com.w2a.architectbatch1.Pages.facebookLandingPage.doLoginWithValidCredentials(facebookLandingPage.java:32)
 	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:38)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)

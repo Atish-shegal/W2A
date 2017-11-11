@@ -7,7 +7,7 @@
   <test name="Test">
     <classes>
       <class name="com.w2a.architectbatch1.testCases.TestCase1"/>
-      <class name="com.w2a.architectbatch1.testCases.TestCase2"/>
+    <!--   <class name="com.w2a.architectbatch1.testCases.TestCase2"/> -->
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,46 +5,39 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class FacebookLandingPage extends BasePage{
+public class facebookLandingPage extends BasePage {
+
 	
 	@FindBy(id="email")
-	private WebElement email;
+	public WebElement userEmail;
 	
 	@FindBy(id="pass")
-	private WebElement password;
+	public WebElement userPassword;
+	
 	
 	@FindBy(xpath="//input[@value='Log In']")
-	private WebElement loginButton;
-
+	public WebElement loginButton;
+	
+	public facebookLandingPage open()
+	{
+		return (facebookLandingPage)openPage(facebookLandingPage.class);
+	}
+	
+	public FacebookHomePage doLoginWithValidCredentials(String email,String pass)
+	{
+		userEmail.sendKeys(email);
+		userPassword.sendKeys(pass);
+		loginButton.click();
+		
+		return (FacebookHomePage) openPage(FacebookHomePage.class);
+	}
+	
+	
+	
+	
 	@Override
 	public ExpectedCondition getPageLoadCondition() {
-		
 		return ExpectedConditions.visibilityOf(loginButton);
 	}
-	
-	public FacebookLandingPage open()
-	{
-		return (FacebookLandingPage)openPage(FacebookLandingPage.class);
-	}
-	
-	public FacebookHomePage doLoginWithValidCredentials(String userName,String pass)
-	{
-	
-		type("username",userName,email);
-		//email.sendKeys(userName);
-		password.sendKeys(pass);
-		loginButton.click();
-		return (FacebookHomePage)openPage(FacebookHomePage.class);
-	}
-	
-	public FacebookLandingPage doLoginWithInValidCredentials(String userName,String pass)
-	{
-	
-		email.sendKeys(userName);
-		password.sendKeys(pass);
-		loginButton.click();
-		return this;
-	}
-	
 
 }

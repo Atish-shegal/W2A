@@ -57,6 +57,7 @@ public class TestSetUp {
 
 		ExtentTest parent = extent.createTest(getClass().getSimpleName());
 		classLevelReport.set(parent);
+		configProperty = PropertyFileManager.createConfigFileProperty();
 	}
 
 	@BeforeMethod
@@ -65,9 +66,9 @@ public class TestSetUp {
 		System.out.println("executing beforeMethod");
 		System.out.println("Driver-->" + driver);
 		if (driver == null) {
-			configProperty = PropertyFileManager.createConfigFileProperty();
+			//configProperty = PropertyFileManager.createConfigFileProperty();
 			driver = DriverFactory.createDriverInstance(configProperty.getProperty("browser"));
-			DriverManager.getDriver().navigate().to(configProperty.getProperty("application.url.fb"));
+			DriverManager.getDriver().navigate().to(configProperty.getProperty("testSiteUrl"));
 
 		}
 

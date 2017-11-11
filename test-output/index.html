@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.architectbatch1.testCases.TestCase1" hash-for-method="tc_02({password=12345.0, username=Rahul})">tc_02({password=12345.0, username=Rahul})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.architectbatch1.testCases.TestCase1" hash-for-method="tc_02({password=12123.0, username=8.744954505E9})">tc_02({password=12123.0, username=8.744954505E9})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -125,15 +125,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_02({password=12345.0, username=Rahul})">
-                  </a> <!-- tc_02({password=12345.0, username=Rahul}) -->
+                  <a name="tc_02({password=12123.0, username=8.744954505E9})">
+                  </a> <!-- tc_02({password=12123.0, username=8.744954505E9}) -->
                   <span class="method-name">tc_02</span>
-                  <span class="parameters">({password=12345.0, username=Rahul})</span>
+                  <span class="parameters">({password=12123.0, username=8.744954505E9})</span>
                   <div class="stack-trace">java.lang.NullPointerException
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.w2a.architectbatch1.Pages.BasePage.waitForPageToLoad(BasePage.java:50)
-	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:39)
-	at com.w2a.architectbatch1.Pages.FacebookLandingPage.doLoginWithValidCredentials(FacebookLandingPage.java:36)
+	at com.w2a.architectbatch1.Pages.BasePage.waitForPageLoad(BasePage.java:39)
+	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:27)
+	at com.w2a.architectbatch1.Pages.facebookLandingPage.doLoginWithValidCredentials(facebookLandingPage.java:32)
 	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:38)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -160,7 +160,6 @@
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.w2a.architectbatch1.testCases.TestCase1&quot;/&gt;
-      &lt;class name=&quot;com.w2a.architectbatch1.testCases.TestCase2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -174,7 +173,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,12 +203,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_02')
 data.setCell(0, 2, 'com.w2a.architectbatch1.testCases.TestCase1')
-data.setCell(0, 3, 3463);
+data.setCell(0, 3, 4121);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,22 +223,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.w2a.architectbatch1.testCases.TestCase2</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -255,37 +241,37 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">496 ms</span>
+                <span class="method-start">485 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">510 ms</span>
+                <span class="method-start">503 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.w2a.architectbatch1.testCases.TestCase1.tc_02(java.util.Hashtable))</span>
-                <span class="method-start">685 ms</span>
+                <span class="method-start">699 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">tc_02({password=12345.0, username=Rahul})</span>
-                <span class="method-start">14215 ms</span>
+                <span class="method-name">tc_02({password=12123.0, username=8.744954505E9})</span>
+                <span class="method-start">14688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=tc_02 status=FAILURE method=TestCase1.tc_02(java.util.Hashtable)[pri:0, instance:co...)</span>
-                <span class="method-start">18908 ms</span>
+                <span class="method-start">19983 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">20416 ms</span>
+                <span class="method-start">21903 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">20418 ms</span>
+                <span class="method-start">21903 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20446 ms</span>
+                <span class="method-start">21931 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
