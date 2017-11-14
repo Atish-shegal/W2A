@@ -3,6 +3,7 @@ package com.w2a.architectbatch1.testCases;
 import java.util.Hashtable;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.w2a.architectbatch1.Pages.ZoHoHomePage;
@@ -13,7 +14,7 @@ import com.w2a.architectbatch1.baseSetup.TestSetUp;
 
 public class TestCase3 extends TestSetUp{
 	
-	@Test
+	@Test(dataProviderClass=TestUtils.class,dataProvider="dp")
 	public void verifyLoginWithValidCred(Hashtable<String,String> data)
 	{
 		ZohoLandingPage landingPage= new ZohoLandingPage().open();

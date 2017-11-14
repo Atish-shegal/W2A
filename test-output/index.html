@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.architectbatch1.testCases.TestCase1" hash-for-method="tc_02({password=12123.0, username=8.744954505E9})">tc_02({password=12123.0, username=8.744954505E9})</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.architectbatch1.testCases.TestCase3" hash-for-method="verifyLoginWithValidCred({password=Tcs@12345, username=w2ajava@way2automation.com})">verifyLoginWithValidCred({password=Tcs@12345, username=w2ajava@way2automation.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,33 +117,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.w2a.architectbatch1.testCases.TestCase1</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.w2a.architectbatch1.testCases.TestCase3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_02({password=12123.0, username=8.744954505E9})">
-                  </a> <!-- tc_02({password=12123.0, username=8.744954505E9}) -->
-                  <span class="method-name">tc_02</span>
-                  <span class="parameters">({password=12123.0, username=8.744954505E9})</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.w2a.architectbatch1.Pages.BasePage.waitForPageLoad(BasePage.java:39)
-	at com.w2a.architectbatch1.Pages.BasePage.openPage(BasePage.java:27)
-	at com.w2a.architectbatch1.Pages.facebookLandingPage.doLoginWithValidCredentials(facebookLandingPage.java:32)
-	at com.w2a.architectbatch1.testCases.TestCase1.tc_02(TestCase1.java:38)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifyLoginWithValidCred({password=Tcs@12345, username=w2ajava@way2automation.com})">
+                  </a> <!-- verifyLoginWithValidCred({password=Tcs@12345, username=w2ajava@way2automation.com}) -->
+                  <span class="method-name">verifyLoginWithValidCred</span>
+                  <span class="parameters">({password=Tcs@12345, username=w2ajava@way2automation.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -159,7 +148,7 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.w2a.architectbatch1.testCases.TestCase1&quot;/&gt;
+      &lt;class name=&quot;com.w2a.architectbatch1.testCases.TestCase3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -201,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_02')
-data.setCell(0, 2, 'com.w2a.architectbatch1.testCases.TestCase1')
-data.setCell(0, 3, 4121);
+data.setCell(0, 1, 'verifyLoginWithValidCred')
+data.setCell(0, 2, 'com.w2a.architectbatch1.testCases.TestCase3')
+data.setCell(0, 3, 16382);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,44 +223,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.w2a.architectbatch1.testCases.TestCase1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.w2a.architectbatch1.testCases.TestCase3</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">485 ms</span>
+                <span class="method-start">344 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">503 ms</span>
+                <span class="method-start">344 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.w2a.architectbatch1.testCases.TestCase1.tc_02(java.util.Hashtable))</span>
-                <span class="method-start">699 ms</span>
+                <span class="method-name">beforeMethod(public void com.w2a.architectbatch1.testCases.TestCase3.verifyLoginWithValidCred(java.util.Hashtable...)</span>
+                <span class="method-start">471 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tc_02({password=12123.0, username=8.744954505E9})</span>
-                <span class="method-start">14688 ms</span>
+                <span class="method-name">verifyLoginWithValidCred({password=Tcs@12345, username=w2ajava@way2automation.com})</span>
+                <span class="method-start">15358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=tc_02 status=FAILURE method=TestCase1.tc_02(java.util.Hashtable)[pri:0, instance:co...)</span>
-                <span class="method-start">19983 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifyLoginWithValidCred status=SUCCESS method=TestCase3.verifyLoginWithValidCred(j...)</span>
+                <span class="method-start">32216 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">21903 ms</span>
+                <span class="method-start">33219 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">21903 ms</span>
+                <span class="method-start">33219 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21931 ms</span>
+                <span class="method-start">33266 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

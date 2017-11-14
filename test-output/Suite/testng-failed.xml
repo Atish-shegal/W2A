@@ -6,19 +6,19 @@
   </listeners>
   <test name="Test(failed)" parallel="classes">
     <classes>
-      <class name="com.w2a.architectbatch1.testCases.TestCase1">
+      <class name="com.w2a.architectbatch1.testCases.TestCase3">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="beforeTest"/>
-          <include name="tc_02" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
+          <include name="verifyLoginWithValidCred" invocation-numbers="0"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.w2a.architectbatch1.testCases.TestCase1 -->
+      </class> <!-- com.w2a.architectbatch1.testCases.TestCase3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

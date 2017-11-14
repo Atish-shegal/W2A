@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ZoHoHomePage extends BasePage{
 
-	@FindBy(xpath="//div[text(),'CRM']")
+	@FindBy(xpath="//div[@class='app-nm' and contains(text(),'CRM')]")
 	public WebElement crmLink;
 
 	@Override
