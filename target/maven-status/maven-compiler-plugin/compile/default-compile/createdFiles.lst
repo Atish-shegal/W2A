@@ -17,6 +17,7 @@ com\w2a\architectbatch1\Pages\BasePage.class
 com\w2a\architectbatch1\Pages\ZohoLandingPage.class
 com\w2a\architectbatch1\Rough\Rough.class
 com\w2a\architectbatch1\baseSetup\TestSetUp.class
+com\w2a\architectbatch1\TestUtils\SampleUtil.class
 com\w2a\architectbatch1\Pages\facebookLandingPage.class
 com\w2a\architectbatch1\Rough\GridExample.class
 com\w2a\architectbatch1\CustomListeners\CustomListeners.class

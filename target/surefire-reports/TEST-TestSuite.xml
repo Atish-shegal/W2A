@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="29.402" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="49.971" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Jenkins_example"/>
+    <property name="JOB_NAME" value="Architect_batch1"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="JENKINS_HOME" value="C:\Users\DELL PC\.jenkins"/>
     <property name="HUDSON_SERVER_COOKIE" value="aba92cd40c46fe42"/>
+    <property name="POM_ARTIFACTID" value="Architectbatch1"/>
     <property name="os.name" value="Windows 8"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="Architectbatch1"/>
     <property name="NODE_LABELS" value="master"/>
     <property name="TEMP" value="C:\Users\DELLPC~1\AppData\Local\Temp"/>
     <property name="java.runtime.version" value="1.8.0_144-b01"/>
@@ -23,10 +25,11 @@
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="PROMPT" value="$P$G"/>
     <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Jenkins_example"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Jenkins_example/3/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#3"/>
+    <property name="JOB_BASE_NAME" value="Architect_batch1"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Architect_batch1/5/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#5"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="291240522d4ae80a89b764f5783d8ca64dfb3cc5"/>
     <property name="DOCKER_TOOLBOX_INSTALL_PATH" value="C:\Program Files\Docker Toolbox"/>
     <property name="LOCALAPPDATA" value="C:\Users\DELL PC\AppData\Local"/>
     <property name="java.version" value="1.8.0_144"/>
@@ -36,7 +39,7 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="3"/>
+    <property name="BUILD_ID" value="5"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -45,18 +48,21 @@
     <property name="HOMEDRIVE" value="C:"/>
     <property name="maven.conf" value="E:\Softwares\apache-maven-3.5.2\conf"/>
     <property name="java.class.version" value="52.0"/>
+    <property name="=::" value="::\"/>
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="user.country" value="US"/>
     <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="6.2"/>
-    <property name="RUN_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Jenkins_example/3/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Architect_batch1/5/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Users\DELLPC~1\AppData\Local\Temp"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.144-b01"/>
     <property name="user.variant" value=""/>
-    <property name="JOB_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Jenkins_example/display/redirect"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="291240522d4ae80a89b764f5783d8ca64dfb3cc5"/>
+    <property name="JOB_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Architect_batch1/display/redirect"/>
     <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
     <property name="USERDOMAIN_ROAMINGPROFILE" value="DELL"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
@@ -65,14 +71,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
     <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
-    <property name="HOMEPATH" value="\Users\DELL PC"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="COMPUTERNAME" value="DELL"/>
+    <property name="HOMEPATH" value="\Users\DELL PC"/>
+    <property name="POM_PACKAGING" value="jar"/>
     <property name="user.script" value=""/>
+    <property name="COMPUTERNAME" value="DELL"/>
+    <property name="POM_GROUPID" value="com.w2a.architectbatch1"/>
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
     <property name="user.home" value="C:\Users\DELL PC"/>
-    <property name="BUILD_TAG" value="jenkins-Jenkins_example-3"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-Architect_batch1-5"/>
     <property name="JENKINS_SERVER_COOKIE" value="aba92cd40c46fe42"/>
     <property name="=E:" value="E:\Softwares"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -80,14 +88,14 @@
     <property name="USERPROFILE" value="C:\Users\DELL PC"/>
     <property name="CLASSPATH" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\Softwares\apache-maven-3.5.2/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Git\cmd;;C:\Program Files\Docker Toolbox;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\Softwares\apache-maven-3.5.2/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\Program Files\Java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Git\cmd;%MAVEN_HOME%\bin;;C:\Program Files\Docker Toolbox;."/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\Users\DELL PC\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="E:\Softwares\apache-maven-3.5.2"/>
     <property name="java.class.path" value="C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;E:\Softwares\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;E:\Softwares\apache-maven-3.5.2/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main E:\Softwares\apache-maven-3.5.2 C:\Users\DELL PC\.jenkins\war\WEB-INF\lib\remoting-3.10.2.jar C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 53024"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Git\cmd;;C:\Program Files\Docker Toolbox"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main E:\Softwares\apache-maven-3.5.2 C:\Users\DELL PC\.jenkins\war\WEB-INF\lib\remoting-3.10.2.jar C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 60052"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Git\cmd;%MAVEN_HOME%\bin;;C:\Program Files\Docker Toolbox"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_144/bin"/>
@@ -113,20 +121,20 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="E:\Softwares\apache-maven-3.5.2"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="3"/>
+    <property name="BUILD_NUMBER" value="5"/>
     <property name="PROCESSOR_REVISION" value="3a09"/>
     <property name="GIT_BRANCH" value="origin/master"/>
     <property name="ProgramW6432" value="C:\Program Files"/>
     <property name="windir" value="C:\WINDOWS"/>
-    <property name="GIT_COMMIT" value="567b9c98d8ec66a1b287fa2ec3dcf75d238ecaa6"/>
+    <property name="GIT_COMMIT" value="291240522d4ae80a89b764f5783d8ca64dfb3cc5"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="SystemDrive" value="C:"/>
     <property name="maven3.interceptor" value="C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
-    <property name="WORKSPACE" value="C:\Users\DELL PC\.jenkins\workspace\Jenkins_example"/>
+    <property name="WORKSPACE" value="C:\Users\DELL PC\.jenkins\workspace\Architect_batch1"/>
     <property name="maven3.interceptor.common" value="C:\Users\DELL PC\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
-    <property name="GIT_URL" value="https://github.com/w2aJava/ArchitectBatch1.git"/>
+    <property name="GIT_URL" value="https://github.com/w2aJava/Architect_1.git"/>
   </properties>
-  <testcase name="verifyLoginWithValidCred" classname="com.w2a.architectbatch1.testCases.TestCase3" time="29.402"/>
+  <testcase name="verifyLoginWithValidCred" classname="com.w2a.architectbatch1.testCases.TestCase3" time="49.971"/>
 </testsuite>
