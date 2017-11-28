@@ -4,8 +4,10 @@
   <listeners>
 		<listener class-name="com.w2a.architectbatch1.CustomListeners.CustomListeners"></listener>
 	</listeners>
+	<parameter name="" value=""></parameter>
   <test name="Test">
     <classes>
+    
       <class name="com.w2a.architectbatch1.testCases.TestCase3"/>
     <!--   <class name="com.w2a.architectbatch1.testCases.TestCase2"/> -->
      </classes>

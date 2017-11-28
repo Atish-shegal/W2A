@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCases>
+	<TestCase>
+		<name>tc_01</name>
+		<browser>chrome</browser>
+		<id>1212</id>
+	</TestCase>
+	<TestCase>
+		<name>tc_02</name>
+		<browser>firefox</browser>
+	</TestCase>
+	<TestCase>
+		<name>tc_03</name>
+		<browser>ie</browser>
+	</TestCase>
+</TestCases>

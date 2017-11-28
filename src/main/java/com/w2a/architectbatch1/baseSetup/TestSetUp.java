@@ -23,6 +23,7 @@ import com.w2a.architectbatch1.TestUtils.DriverManager;
 import com.w2a.architectbatch1.TestUtils.ExcelReader;
 import com.w2a.architectbatch1.TestUtils.ExtentManager;
 import com.w2a.architectbatch1.TestUtils.PropertyFileManager;
+import com.w2a.architectbatch1.customAnnotation.TestCaseId;
 
 public class TestSetUp {
 
@@ -62,6 +63,9 @@ public class TestSetUp {
 
 	@BeforeMethod
 	public synchronized void beforeMethod(Method method) {
+		TestCaseId testCaseId=method.getAnnotation(TestCaseId.class);
+		System.out.println(testCaseId.testCaseId());
+		//String browser=getBrowserName(testCaseId.testCaseId())
 		WebDriver driver = null;
 		System.out.println("executing beforeMethod");
 		System.out.println("Driver-->" + driver);
@@ -72,6 +76,7 @@ public class TestSetUp {
 
 		}
 
+		
 		/*ExtentTest child = classLevelReport.get().createNode(method.getName());
 		testLevelReport.set(child);
 		testLevelReport.get().log(Status.INFO, "Execution of Test Case-"+" "+method.getName()+" started");

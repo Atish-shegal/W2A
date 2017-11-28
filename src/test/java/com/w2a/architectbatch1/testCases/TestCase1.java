@@ -11,6 +11,7 @@ import com.w2a.architectbatch1.Pages.facebookLandingPage;
 import com.w2a.architectbatch1.TestUtils.DriverManager;
 import com.w2a.architectbatch1.TestUtils.TestUtils;
 import com.w2a.architectbatch1.baseSetup.TestSetUp;
+import com.w2a.architectbatch1.customAnnotation.TestCaseId;
 
 public class TestCase1 extends TestSetUp{
 
@@ -30,6 +31,8 @@ public class TestCase1 extends TestSetUp{
 		}
 
 	}*/
+	
+	@TestCaseId(testCaseId="tc_01")
 	@Test(dataProviderClass=TestUtils.class,dataProvider="dp")
 	public void tc_02(Hashtable<String, String> data) {
 		
